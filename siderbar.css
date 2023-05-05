@@ -1,0 +1,144 @@
+.icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    font-size: 40px;
+    /* color:red; */
+    background: currentColor;
+    -webkit-mask: var(--icon, linear-gradient(transparent, transparent)) center no-repeat;
+    animation: rotate 1.4s linear infinite paused;
+}
+@font-face {
+font-family: 'PingFang';
+src: url('https://cdn.jsdelivr.net/npm/frontfontpackage@1.0.0/PingFang/苹方黑体-细-简.ttf');
+font-weight: normal;
+font-style: normal;
+font-display: optional
+}
+
+* {
+padding: 0;
+margin: 0;
+text-decoration: none;
+/* font-size: 1rem; */
+font-family: PingFang, sans-serif;
+}
+
+body {
+background-color: rgb(0, 0, 0, 20%);
+
+display: flex;
+/* justify-content: space-evenly; */
+/* height: 100vh; */
+align-items: center;
+}
+
+.shell {
+width: 60px;
+height: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+/* align-items: flex-start; */
+flex-direction: column;
+background-color: rgb(0, 0, 0, 20%);
+border-radius: 10px;
+transition: .3s;
+overflow: hidden;
+position: fixed;
+left: 0;
+top: 0;
+}
+
+.box {
+display: block;
+height: 50px;
+width: 100%;
+/* margin: 9px; */
+padding-bottom:15px ;
+border-radius: 5px;
+position: relative;
+transition: .3s;
+color: rgb(160, 160, 175);
+}
+
+.box i {
+font-size: 25px;
+position: absolute;
+margin: 18px 0 0 18px;
+color: rgba(0, 0, 0, 100%);
+}
+
+/* .box:nth-child(1)::before,
+.box:nth-child(5)::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(55, 65, 81);
+    position: absolute;
+    bottom: -10px;
+} */
+
+.box span {
+position: relative;
+top: -9px;
+left: 23px;
+width: 1000px;
+opacity: 0;
+display: block;
+flex-wrap: wrap;
+/* transition: .1s; */
+color: black;
+font-size: 15px;
+}
+.box:hover {
+background-color: rgba(0, 0, 0, 40%);
+}
+
+@keyframes cssEffect {
+0%{
+    opacity: 80%;
+}
+100%{
+    opacity: 100%;
+}
+}
+/* .box.active {
+animation-name: cssEffect;
+animation-duration: 0.5s;
+background-color: rgba(0, 0, 0, 40%);
+} */
+.box .span{
+    width: 900px;
+}
+
+/* .shell:hover {
+width: 120px;
+}
+
+.shell:hover +.right {
+left: 120px;
+} */
+
+
+/* .shell:hover span {
+opacity: 1;
+} */
+
+.box:hover {
+/* color:transparent; */
+}
+
+
+.right{
+position: relative;
+left: 80px;
+transition: .3s;
+padding: 20px;
+}
+
+a:link{color:red;text-decoration:none}/*未访问，红色，无下划线*/
+a:active{color:rgb(176, 255, 6);}/*激活，红色*/
+a:visited{color:rgb(33, 177, 255);text-decoration:none}

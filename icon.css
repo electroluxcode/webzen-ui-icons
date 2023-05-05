@@ -1,0 +1,43 @@
+
+h2{
+    padding:6px 20px;
+}
+span{
+    padding: 30px;
+}
+.icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    font-size: 50px;
+    /* color:red; */
+    background: currentColor;
+    -webkit-mask: var(--icon, linear-gradient(transparent, transparent)) center no-repeat;
+    animation: rotate 1.4s linear infinite paused;
+}
+.icon_box{
+    /* width: 80%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon_home{
+    width: 120px;
+    margin: 10px 20px;
+    height: 140px;
+    background: white;
+    border-radius: 10px;
+    /* margin: 0 auto; */
+    /* display: flex;
+    justify-content: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+.icon_home i{
+    /* height: 30px !important; */
+    width: 100%;
+
+  
+    margin: 30px 0px 10px 0px;
+}
