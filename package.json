@@ -1,6 +1,6 @@
 {
   "name": "webzen-ui-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webzen-ui 的 icon 库 搭建",
   "main": "index.js",
   "scripts": {
